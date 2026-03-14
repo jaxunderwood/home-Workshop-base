@@ -10,6 +10,6 @@ This base repository will only hold the HTML and CSS. This project is a website,
 I will be using flexbox for the layout. Not my strong suit, but building this should make me better.
 
 ## Accessibility
-My goal is for this website to be born accessible. I will be following the WCAG 2.2 Level AAA standards for this. I will make sure that at the end, I write up a report of what accessibility testing sites I used.
+My goal is for this website to be born accessible. I will be following the WCAG 2.2 Level AA standards for this. I will make sure that at the end, I write up a report of what accessibility testing sites I used.
 
  
