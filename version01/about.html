@@ -3,32 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About The Home Workshop</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Crete+Round:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&family=Keania+One&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/f9868e7eb8.js" crossorigin="anonymous"></script>
-    </head>
+    <script defer src="scripts/script/js"></script>
+</head>
 
-    <body>
-        <div class="nav1">
-            <a class="logo" href="index.html">The Home Workshop</a>
-            <div>
-                <i class="fa-solid fa-user"></i>
-                <a class="link" href="signup.html">sign up</a>
+<body>
+<!--Main Content -->
+<main>
+    <!-- Main -->
+    <!--header -->
+    <header class="header">
+        <!-- header -->
+        <!--Navigation bar -->
+        <nav class="nav">
+            <div class="nav1">
+                <a class="logo" href="index.html">The Home Workshop</a>
+                <div>
+                    <a class="link" href="sign-in.html"> <i class="fa-solid fa-user"></i></a>
+                    <a class="link" href="signup.html">sign up</a>
+                </div>
             </div>
-        </div>
-        <nav class="navbar">
-            <ul class="navbar-list">
-                <li><a href="projects.html">Projects</li>
-                <li><a href="Workshop.html">Workshop</a></li>
-                <li><a href="Meetup.html">Meetups</a></li>
-                <li><a href="forum.html">User Forum</a></li>
-                <li><a href="articles.html">Articles</a></li>
-                <li><a href="about.html">About Us</a></li>
-            </ul>
-            <input type="text" placeholder="Search. . .">
+            <div class="navbar">
+                <ul class="navbar-list">
+                    <li><a href="projects.html">Projects</li>
+                    <li><a href="Workshop.html">Workshop</a></li>
+                    <li><a href="Meetup.html">Meetups</a></li>
+                    <li><a href="forum.html">User Forum</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+                <search>
+                    <form>
+                        <input type="text" name="search" id="search" placeholder="Search. . ."><i
+                            class="fa-solid fa-magnifying-glass"></i>
+                    </form>
+                </search>
+            </div>
+            <a href="javascript:void(0);" class="menu-icon">
+                <i class="fa-solid fa-bars-staggered"></i></a>
         </nav>
+    </header>
+<!--hero -->
+<section class="hero-about">
+    <!-- hero -->
+    <div>
+        <h1 class="head1">About The Home Workshop</h1>
+    </div>
+</section>
+<!--Content-->
+<section class="content">
+    <!-- Content -->
+    <div class="menu">
+        <p class="description"><em>The Home Workshop</em> was created by Jacqui Hudson-Underwood to empower homeowners, apartment therapist, house flippers, and anyone that is interested in do-it-yourself home improvement. The hope is that this will be a place to build community with others gaining the courage to take control of their projects but need a little help getting there.</p>
 
+
+    </div>
+    <div class="contact">
+        <div class="contact-greeting">
+<h1 class="contact-h1">Hello!</h1>
+<p class="more-info">Do you have a question? Are you interested in partnering with us? Let a message and we'll get back to you!</p>
+
+
+        </div>
+<form class="contact-form">
+        <div class="form-fields">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required placeholder="Your Name">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email"  placeholder="Your email address">
+                <label for="name">Subject</label>
+                <input type="text" name="name" id="name" placeholder="Subject">
+            </div>
+
+            <div>
+                <label for="message"></label>
+                <textarea placeholder="Enter your message here."></textarea>
+                <input class="submit-button" type="submit" value="Submit">
+
+                </div>
+    </div>
+</section>
+
+
+</main>
+<!--footer -->
+<footer class="footer">
+    <!-- footer -->
+    <a class="link" href="https://www.linkedin.com/in/jacquelynnehudson/"><i class="fa-brands fa-linkedin"></i></a>
+    <a class="link" href="https://github.com/jaxunderwood"><i class="fa-brands fa-square-github"></i></a>
+    <p>Website design by Jacqui Hudson-Underwood</p>
+    <p>Copyright © <span id="current-year"></span></p>
+</footer>
 </body>
 </html>

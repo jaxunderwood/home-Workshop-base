@@ -4,83 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Home Workshop</title>
-    <link rel="stylesheet" href="styles/styles.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <script src="https://kit.fontawesome.com/f9868e7eb8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Crete+Round:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&family=Keania+One&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f9868e7eb8.js" crossorigin="anonymous"></script>
+    <script defer src="scripts/script/script.js"></script>
 </head>
+
 <body>
-<div class="nav1">
-    <a class="logo" href="index.html">The Home Workshop</a>
-   <div>
-    <i class="fa-solid fa-user"></i>
-    <a class="link" href="signup.html">sign up</a>
-    </div>
-</div>
-<nav class="navbar">
-    <ul class="navbar-list">
-        <li><a href="projects.html">Projects</li>
-        <li><a href="Workshop.html">Workshop</a></li>
-        <li><a href="Meetup.html">Meetups</a></li>
-        <li><a href="forum.html">User Forum</a></li>
-        <li><a href="articles.html">Articles</a></li>
-        <li><a href="about.html">About Us</a></li>
-    </ul>
-    <input type="text" placeholder="Search. . .">
-</nav>
-<header>
-    <div class="header">
-        <div>
 
-            <h1>Featured Projects</h1>
-
-            <div class="hero">
-                <div>
-                    <div class="image">
-                         <img src="images/cabinet_painting.jpg" alt="hand painting cabinet front">
+    <!--Main Content -->
+    <main>
+        <!-- Main -->
+        <!--header -->
+        <header class="header">
+            <!-- header -->
+            <!--Navigation bar -->
+            <nav class="nav">
+                <div class="nav1">
+                    <a class="logo" href="index.html">The Home Workshop</a>
+                    <div>
+                        <a class="link" href="sign-in.html"> <i class="fa-solid fa-user"></i></a>
+                        <a class="link" href="signup.html">sign up</a>
                     </div>
+                </div>
+                <div class="navbar">
+                    <ul class="navbar-list">
+                        <li><a href="projects.html">Projects</li>
+                        <li><a href="Workshop.html">Workshop</a></li>
+                        <li><a href="Meetup.html">Meetups</a></li>
+                        <li><a href="forum.html">User Forum</a></li>
+                        <li><a href="articles.html">Articles</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                    <search>
+                        <form>
+                            <input type="text" name="search" id="search" placeholder="Search. . ."><i
+                                class="fa-solid fa-magnifying-glass"></i>
+                        </form>
+                    </search>
+                </div>
+                <a href="javascript:void(0);" class="menu-icon">
+                    <i class="fa-solid fa-bars-staggered"></i></a>
+            </nav>
+        </header>
+        <!--hero -->
+        <section class="hero">
+            <!-- hero -->
+            <div>
+                <h1 class="head1">Hands-on learning for real homes</h1>
+            </div>
+        </section>
+        <!--Content-->
+        <section class="content">
+            <!-- Content -->
+            <h1>Featured Project</h1>
+
+
+            <div class="project-card">
+
+                <div class="card">
+                    <figure class="imagec"><img class="imagefw" src="images/cabinet_painting.jpg"
+                            alt="hand painting cabinet front"></figure>
+
                     <div class="details">
                         <h2 class="project">How to Paint Cabinets</h2>
                         <h3>Project level: <span class="level">intermediate</span></h3>
                         <h3>Time: <span class="level">Weekend project</span></h3>
                     </div>
                 </div>
-                <div>
-                    <img src="images/drywall_mudding.jpg" alt="hand spreading drywall mud">
-                    <div class="details">
-                        <h2 class="project">How to Put up Drywall</h2>
-                        <h3>Project level: <span class="level">intermediate</span></h3>
-                        <h3>Time: <span class="level"> 2 hours</span></h3>
-                    </div>
+
+
+
+                <div class="card">
+                    <figure class="imagec"><img class="imagefw" img src="images/drywall_mudding.jpg"
+                            alt="hand spreading drywall mud">
+
+                        <div class="details">
+                            <h2 class="project">How to Put up Drywall</h2>
+                            <h3>Project level: <span class="level">intermediate</span></h3>
+                            <h3>Time: <span class="level"> 2 hours</span></h3>
+                        </div>
                 </div>
+
+
             </div>
-        </div>
-
-
-    </div>
-    </div>
-</header>
-<main>
-
-
-    <div class="tip-week">
-        <img src="images/ceiling-fan.jpg" alt="still ceiling fan in living room with window in the background" >
-        <div>
-        <h1>Tip of the week</h1>
-        <p>Ceiling fans should run <strong>counterclockwise</strong> in the summer at higher speeds to create a cool, downdraft breeze. In the winter, set them to run <strong>clockwise</strong> at a low speed to create an updraft that pulls cool air up and pushes warm air down from the ceiling</p>
-        </div>
-    </div>
-</main>
-<footer>
- <!-- social media links -->
-<div>
-    <i class="fa-brands fa-bluesky"></i>
-<i class="fa-brands fa-facebook"></i>
-<i class="fa-brands fa-instagram"></i>
-<i class="fa-brands fa-pinterest"></i>
-</div>
-    <p>Website design by Jacqui Hudson-Underwood</p>
-    <p>Copyright © 2026</p>
-</footer>
+        </section>
+        <aside class="aside">
+            <img class="imagefw" src="images/ceiling-fan.jpg"
+                alt="still ceiling fan in living room with window in the background">
+            <div class="tip-box">
+                <h1>Tip of the week</h1>
+                <p>Ceiling fans should run <strong>counterclockwise</strong> in the summer at higher speeds to create a
+                    cool, downdraft breeze. In the winter, set them to run <strong>clockwise</strong> at a low speed to
+                    create an updraft that pulls cool air up and pushes warm air down from the ceiling</p>
+            </div>
+        </aside>
+    </main>
+    <!--footer -->
+    <footer class="footer">
+        <!-- footer -->
+        <a class="link" href="https://www.linkedin.com/in/jacquelynnehudson/"><i class="fa-brands fa-linkedin"></i></a>
+        <a class="link" href="https://github.com/jaxunderwood"><i class="fa-brands fa-square-github"></i></a>
+        <p>Website design by Jacqui Hudson-Underwood</p>
+    <p>Copyright © <span id="current-year"></span></p>
+    </footer>
 </body>
 </html>

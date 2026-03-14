@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Forum</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Crete+Round:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&family=Keania+One&display=swap"
+    rel="stylesheet">
     <script src="https://kit.fontawesome.com/f9868e7eb8.js" crossorigin="anonymous"></script>
+        <script defer src="scripts/script/js"></script>
+
     </head>
 
     <body>
@@ -20,7 +25,7 @@
         </div>
         <nav class="navbar">
             <ul class="navbar-list">
-                <li><a href="projects.html">Projects</li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="Workshop.html">Workshop</a></li>
                 <li><a href="Meetup.html">Meetups</a></li>
                 <li><a href="forum.html">User Forum</a></li>
@@ -29,6 +34,76 @@
             </ul>
             <input type="text" placeholder="Search. . .">
         </nav>
+<main>
+<section class="forum-discussion">
+<nav class="forum-nav">
+ <div class="f-topbar">
+<button class="forum-btn">Start New Discussion</button>
+<ul>
+    <li>All Discussions</li>
+    <li>Following</li>
+</ul>
+ </div>
+<div class="f-bottombar">
+    <ul>
+        <li>General</li>
+        <li>Getting Started</li>
+        <li>Tools</li>
+        <li>Electrical</li>
+        <li>Plumbing</li>
+    </ul>
+</div>
+</nav>
 
+
+</section>
+<section class="forum-main">
+<ol>
+    <li class="row">
+        <a href="/item">
+        <h4 class="post-title"> Post Title 1</h4>
+        <div class="bottom">
+            <p class="timestamp">March 13, 2026</p>
+            <p class="comment-count">4 comments</p>
+        </div>
+        </a>
+    </li>
+    <li class="row">
+        <a href="/item">
+            <h4 class="post-title"> Post Title 2</h4>
+            <div class="bottom">
+                <p class="timestamp">March 13, 2026</p>
+                <p class="comment-count">4 comments</p>
+            </div>
+        </a>
+    </li>
+    <li class="row">
+        <a href="/item">
+            <h4 class="post-title"> Post Title 3</h4>
+            <div class="bottom">
+                <p class="timestamp">March 13, 2026</p>
+                <p class="comment-count">4 comments</p>
+            </div>
+        </a>
+    </li>
+</ol>
+
+</section>
+
+
+
+
+
+
+
+</main>
+        <!--footer -->
+        <footer class="footer">
+            <!-- footer -->
+            <a class="link" href="https://www.linkedin.com/in/jacquelynnehudson/"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="link" href="https://github.com/jaxunderwood"><i class="fa-brands fa-square-github"></i></a>
+            <p>Website design by Jacqui Hudson-Underwood</p>
+            <p>Copyright © <span id="current-year"></span></p>
+        </footer>
 </body>
 </html>
