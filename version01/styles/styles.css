@@ -54,6 +54,7 @@
 body {
     background-color: var(--background2);
     color: var(--background-100);
+    font-family: var(--text);
 }
 
 /*light mode*/
@@ -163,13 +164,13 @@ h1 {
 .link1 {
     text-decoration: none;
     color: var(--secondary2);
-    font-family: var(--text);
 }
 
 /* change on hover */
 ul.navbar-list li a:hover,
 .submit-button:hover,
-.sign-button:hover {
+.sign-button:hover,
+{
     font-family: var(--display-head);
     background-color: var(--primary-600);
     color: var(--accent-100);
@@ -269,7 +270,6 @@ header {
 }
 
 .footer {
-    font-family: var(--text);
     margin-top: 1em;
     text-align: center;
 }
@@ -316,7 +316,6 @@ header {
 }
 
 .menu-h2 {
-    font-family: var(--text);
     font-size: .9em;
     font-weight: 400;
     text-transform: uppercase;
@@ -336,7 +335,6 @@ header {
 }
 .description
 {
-    font-family: var(--text);
     color: var(--accent-800);
     font-size: 1.42em;
     margin: 0 auto;
@@ -389,7 +387,8 @@ header {
 {
     font-size: 105%;
 }
-.submit-button{
+.submit-button
+{
     width: 60%;
     background-color: var(--background2);
     color: var(--background-200);
@@ -422,7 +421,6 @@ textarea{
 } */
 form{
     padding: 1em;
-    font-family: var(--text);
 }
 
 .form-experience input[type="checkbox"]{
@@ -455,7 +453,8 @@ form{
     text-transform: uppercase;
     margin: 1em auto;
 }
-.sign-button {
+.sign-button,
+.forum-discussion button {
     width: 60%;
     background-color: var(--accent2);
     color: var(--background2);
@@ -468,6 +467,7 @@ form{
     text-align: center;
     display: block;
 }
+
 .center{
     text-align: center;
     margin: .475em;
@@ -504,7 +504,6 @@ form{
 }
 .event-specs{
     list-style: none;
-    font-family: var(--text);
 }
 .event-specs button{
     margin: .675em 0;
@@ -570,7 +569,17 @@ form{
 .top-comment,
 .post-question{
     color: var(--accent-700);
-    font-family: var(--text);
+}
+.forum-discussion button {
+    width: 90%;
+    margin-top: 0;
+    display: block;
+}
+.forum-discussion button:hover{
+    background-color: var(--background1);
+    color: var(--background2);
+    text-transform: uppercase;
+    font-weight: bold;
 }
 .forum-comment{
     background-color: var(--background-200);
@@ -597,15 +606,50 @@ form{
 }
 .f-topbar,
 .f-bottombar{
-    margin: 1em .675em;
-    font-family: var(--text);
+    margin: .675em .675em;
     border-bottom: var(--background-200) solid 1px;
-    padding: .475em 0;
+    padding: 1em 0;
 }
 .f-bottombar{
     border: none;
     text-transform: uppercase;
     font-weight: 500;
+}
+.f-bottombar ul,
+.f-topbar ul{
+    list-style: none;
+}
+.f-bottombar li,
+.f-topbar li{
+    margin: .475em 0;
+}
+.f-topbar li:nth-child(1)::before {
+    content: "\002B24\002002";
+    color: var(--secondary-600);
+}
+.f-topbar li:nth-child(2)::before {
+    content: "\002B24\002002";
+    color: var(--secondary-200);
+}
+.f-bottombar li:nth-child(1)::before {
+    content: "\002B24\002002";
+    color: var(--secondary-600);
+}
+.f-bottombar li:nth-child(2)::before {
+    content: "\002B24\002002";
+    color: var(--secondary-200);
+}
+.f-bottombar li:nth-child(3)::before {
+    content: "\002B24\002002";
+    color: var(--accent-500);
+}
+.f-bottombar li:nth-child(4)::before {
+    content: "\002B24\002002";
+    color: var(--background-600);
+}
+.f-bottombar li:nth-child(5)::before {
+    content: "\002B24\002002";
+    color: var(--background-200);
 }
 /* ====================media queries====================== */
 @media screen and (min-width:768px) {
@@ -646,7 +690,6 @@ nav {
 
 .navbar-list {
         display: flex;
-        font-family: var(--text);
         justify-content: space-between;
         gap: 10px;
         margin-top: .475em;
@@ -710,9 +753,9 @@ a.menu-icon {
         align-items: center;
     }
 
-    .content {
+    /* .content {
         background: #129a22;
-    }
+    } */
 
     .card {
         color: var(--background-100);
@@ -841,7 +884,16 @@ a.menu-icon {
 .bottom{
     display: flex;
 }
-
-
-
+.forum{
+    display: flex;
+    flex-direction: rows;
+    width: 100%;
+}
+.forum-discussion{
+    padding: 1em 1em 0 0;
+    width: 30%;
+}
+.forum-main{
+    width: 100%;
+}
 }
